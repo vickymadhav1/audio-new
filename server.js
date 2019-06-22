@@ -72,8 +72,16 @@ router.get('/sitemap',function(req,res){
 router.get('/sitemap',function(req,res){
   res.sendFile(path.join(__dirname+'/upload.html'));
 });
-
-//add the router
+router.get('/sitemap',function(req,res){
+  res.sendFile(path.join(__dirname+'/Cricket.html'));
+});
+router.get('/sitemap',function(req ,res){
+res.sendFile(path.join(__dirname+'/Football.html'))
+});
+router.get('/sitemap',function(req ,res){
+  res.sendFile(path.join(__dirname+'/Shattil.html'))
+  });
+//add the router 
 app.use('/', router);
 app.listen(process.env.port || 9000);
 
